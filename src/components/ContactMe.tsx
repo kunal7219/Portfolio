@@ -39,7 +39,10 @@ const data = [
 
 function ContactMe() {
   return (
-    <div className="relative overflow-hidden flex items-center justify-center">
+    <section
+      id="contactMe" // Ensure this matches the ScrollLink target
+      className="relative overflow-hidden flex items-center justify-center"
+    >
       <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
         <h2 className="text-2xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8">
           Connect With Me
@@ -48,7 +51,7 @@ function ContactMe() {
           <AnimatedTooltip items={data} />
         </div>
       </WavyBackground>
-    </div>
+    </section>
   );
 }
 

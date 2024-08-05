@@ -1,6 +1,5 @@
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-
 const Allskills = [
   {
     image:
@@ -67,30 +66,27 @@ const Allskills = [
   },
 ];
 
-function Skills() {
+const Skills: React.FC = () => {
   return (
     <>
-    <div className='px-[100px] flex flex-col gap-[0.5rem]'>
-          <h1 className='text-3xl font-bold text-white'>Skills</h1>
-          <div className="h-px w-full bg-white"></div>
-    </div>
+      <div className="px-[100px] flex flex-col gap-[0.5rem]" id="skills">
+        <h1 className="text-3xl font-bold text-white">Skills</h1>
+        <div className="h-px w-full bg-white"></div>
+      </div>
 
-    <div className="h-[30rem] w-full bg-white dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
-      {/* <h2 className="text-3xl font-bold text-center mb-8 z-10 text-black dark:text-white">
-        Development Skills
-      </h2> */}
-      <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-6xl">
-          <InfiniteMovingCards
-            items={Allskills}
-            direction="right"
-            speed="slow"
-          />
+      <div className="h-[30rem] w-full bg-white dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
+        <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-6xl">
+            <InfiniteMovingCards
+              items={Allskills}
+              direction="right"
+              speed="slow"
+            />
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
-}
+};
 
 export default Skills;

@@ -5,7 +5,10 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="h-auto px-[100px] w-full rounded-md mx-auto py-10 md:py-0">
+    <section
+      id="about"
+      className="h-auto px-[100px] w-full rounded-md mx-auto py-10 md:py-0"
+    >
       <div className="flex flex-col gap-[2rem]">
         <div className="flex flex-col gap-[0.5rem]">
           <h1 className="text-3xl font-bold text-white">About Me</h1>
@@ -39,7 +42,7 @@ function About() {
             <a href="https://www.linkedin.com/in/kunalsingla721" target="blank">
               <img
                 src="https://www.yashkvr.com/_next/image?url=https%3A%2F%2Fimgur.com%2FJRgbGsP.png&w=128&q=75"
-                alt="github"
+                alt="LinkedIn"
                 style={{ width: "40px", height: "40px" }}
               />
             </a>
@@ -48,7 +51,7 @@ function About() {
             <a href="https://github.com/kunal7219" target="blank">
               <img
                 src="https://www.yashkvr.com/_next/image?url=https%3A%2F%2Fimgur.com%2FqVhGNtD.png&w=128&q=75"
-                alt="github"
+                alt="GitHub"
                 style={{ width: "40px", height: "40px" }}
               />
             </a>
@@ -56,7 +59,7 @@ function About() {
         </ul>
       </div>
       <BackgroundBeams className="top-[200px]" />
-    </div>
+    </section>
   );
 }
 

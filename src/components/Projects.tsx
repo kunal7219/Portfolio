@@ -1,4 +1,4 @@
-"use client";
+// Projects.tsx
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import fitflex from "../../public/images/fitflex.png";
@@ -35,13 +35,13 @@ const dataProject = [
 
 function Projects() {
   return (
-    <div className="my-[4rem]">
-      <div className='px-[100px] flex flex-col gap-[0.5rem]'>
-            <h1 className='text-3xl font-bold text-white'>Projects</h1>
-            <div className="h-px w-full bg-white"></div>
-        </div>
+    <section id="projects" className="my-[4rem]">
+      <div className="px-[100px] flex flex-col gap-[0.5rem]">
+        <h1 className="text-3xl font-bold text-white">Projects</h1>
+        <div className="h-px w-full bg-white"></div>
+      </div>
       <StickyScroll content={dataProject} />
-    </div>
+    </section>
   );
 }
 

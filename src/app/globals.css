@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+#skills {
+  scroll-margin-top: 60px;
+  /* Adjust according to your header height */
+}
